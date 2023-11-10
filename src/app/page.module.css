@@ -3,14 +3,47 @@
   background-color: #161B33;
 }
 
-.main h1 {
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem; 
   position: absolute;
-  left: 8vw;
-  top: 6vh;
+
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 90px;
 }
 
-.navigation {
-  position: absolute;
-  left: 50vw;
-  top: 5vh;
+/* Nav Branding*/
+.brand{
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
+.logo {
+  height: 70px;
+  width: 70px;
+}
+.title{
+  font-weight: bold;
+  font-size: 200%;
+  position: absolute;
+  bottom: 25px;
+}
+
+/* Nav Links */
+.navlinks{
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  font-size: 200%;
+}
+
+@media (max-width: 500px) {
+  .title {
+    display: none;
+  }
+}
+
