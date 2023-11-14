@@ -1,5 +1,77 @@
 .main {
     min-height: 100vh;
     background-color: #161B33;
-}
+  }
+  
+  .mainHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    top: 10px;
+    position: relative;
+  }
+  
+  .leftHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .body{
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .aboutHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    top: 10px;
+    position: relative;
+    font-size:20px;
+  }
+
+  .aboutBody{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    top: 10px;
+    position: relative;
+  }
+  
+  .ourTeam{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .box {
+    /* height: 221px; */
+    width: 70vw;
+    border-radius: 40px;
+    background: white;
+    display: flex;
+    /* margin-right: 30vw; */
+    transform: translate(-15%,0%);
+    z-index: 2;
+  }
+
+  .purple {
+    border-radius: 60px;
+    background: #A69CAC;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    transform: translate(300%,-50%);
+    z-index: 3;
+    position: absolute;
+  }
+  
   

@@ -1,10 +1,10 @@
-'use client';
-import React, { Fragment } from 'react';
+'use client'
+import React, { Fragment } from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../../images/logo.png'
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline'
 import {
   Container,
   Button,
