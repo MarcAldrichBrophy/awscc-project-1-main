@@ -1,4 +1,46 @@
-.main {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxStyle {
+    background-color: #958C9B;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #404267;
+    border-radius: 25px;
+    text-align: center;
+
+    width: 70%;
+    height: 50%;
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: black;
+    overflow: auto;
+  }
+
+  .uploadButton {
+    top: 70%; 
+    width: 10%;
+    height: 5%;
+    min-height: 20px;
+    min-width: 150px;    
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #404267;
+    color: #cccccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+  }
+  
+/* .main {
     min-height: 100vh;
     background-color: #161B33;
   }
@@ -46,4 +88,4 @@
     border-radius: 0;
     background-color: #474973;
     top: 10px;
-  }
+  } */
