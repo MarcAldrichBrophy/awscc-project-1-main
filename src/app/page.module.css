@@ -37,6 +37,50 @@
   align-items: center; /* This will center the headline and button */
 }
 
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem; 
+  position: absolute;
+
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 90px;
+}
+
+/* Nav Branding*/
+.brand{
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+.logo {
+  height: 70px;
+  width: 70px;
+}
+.title{
+  font-weight: bold;
+  font-size: 200%;
+  position: absolute;
+  bottom: 25px;
+}
+
+/* Nav Links */
+.navlinks{
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  font-size: 200%;
+}
+
+@media (max-width: 500px) {
+  .title {
+    display: none;
+  }
+}
+
 .headline {
   position: absolute;
   top: 40vh;
@@ -111,4 +155,3 @@
   margin-left: 10px; /* Spacing from the other nav items */
   transition: background-color 0.3s ease; /* Smooth background color change on hover */
 }
-
