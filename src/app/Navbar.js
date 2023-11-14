@@ -2,8 +2,8 @@ import React from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../images/logo.png'
-import styles from '../page.module.css'
+import logo from './favicon.ico'
+import styles from './page.module.css'
 
 const Navbar = () => {
     return (
