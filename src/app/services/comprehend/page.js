@@ -10,7 +10,7 @@ export default function Comprehend() {
   return (
     <div className={styles.container}>
       <div className={styles.boxStyle}>
-          <p ref={contentRef}/>
+          <p ref={contentRef}>
       </div>
       <UploadButton setFileName={setFileName} name="Upload" cls={styles.uploadButton} content={contentRef}/>
       <p className={styles.fileName}>{fileName}</p>

@@ -7,8 +7,12 @@
   align-items: center;
 }
 
-.nav {
-  display: flex;
+/* Navbar */
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
 }
 
 .navItem {
@@ -20,65 +24,55 @@
   font-size: 1rem;
   margin-left: 20px;
   font-weight: bold; /* Add this if your design requires */
+  text-decoration: none;
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoTitle {
+  margin-left: 20px; /* Adjust as per your design */
+  color: #fff; /* Text color for the logo title */
+  font-size: 2rem; /* Adjust font size to match your design */
+  font-weight: bold; /* Adjust as per your design */
+}
+
+.navButton {
+  background-color: #F1DAC4; /* Button background color */
+  color: #161B33; /* Button text color, assuming it's the same as the body background */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Adjust as per design */
+  font-size: 1rem;
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block; /* Allows padding and dimensions */
+  margin-left: 10px; /* Spacing from the other nav items */
+  transition: background-color 0.3s ease; /* Smooth background color change on hover */
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .logoTitle {
+    display: none;
+  }
+}
+
+/* Homepage */
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center; /* Center the text */
-  height: 100vh;
   padding: 0 20px; /* Add padding to prevent content touching the screen edges */
 }
 .contentContainer {
   display: flex;
   flex-direction: column; /* This will stack the headline and button vertically */
   align-items: center; /* This will center the headline and button */
-}
-
-.navbar {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 1rem 2rem; 
-  position: absolute;
-
-  left: 0vw;
-  top: 0vh;
-  width: 100vw;
-  height: 90px;
-}
-
-/* Nav Branding*/
-.brand{
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-.logo {
-  height: 70px;
-  width: 70px;
-}
-.title{
-  font-weight: bold;
-  font-size: 200%;
-  position: absolute;
-  bottom: 25px;
-}
-
-/* Nav Links */
-.navlinks{
-  list-style-type: none;
-  display: flex;
-  gap: 3rem;
-  font-size: 200%;
-}
-
-@media (max-width: 500px) {
-  .title {
-    display: none;
-  }
 }
 
 .headline {
@@ -101,8 +95,11 @@
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease; /* Add transition for interactive states */
+  position: absolute;
+  top: 55vh;
+  left: 30vw;
+  text-decoration: none;
 }
-
 
 .illustration {
   position: relative;
@@ -129,29 +126,4 @@
   .tryNowButton {
       margin-top: 20px;
   }
-}
-.logoContainer {
-  display: flex;
-  align-items: center;
-}
-
-.logoTitle {
-  margin-left: 20px; /* Adjust as per your design */
-  color: #fff; /* Text color for the logo title */
-  font-size: 2rem; /* Adjust font size to match your design */
-  font-weight: bold; /* Adjust as per your design */
-}
-
-.navButton {
-  background-color: #F1DAC4; /* Button background color */
-  color: #161B33; /* Button text color, assuming it's the same as the body background */
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px; /* Adjust as per design */
-  font-size: 1rem;
-  text-decoration: none; /* Remove underline from the link */
-  display: inline-block; /* Allows padding and dimensions */
-  margin-left: 10px; /* Spacing from the other nav items */
-  transition: background-color 0.3s ease; /* Smooth background color change on hover */
 }
