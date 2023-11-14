@@ -1,18 +1,19 @@
 'use client';
 import React, { useRef, useState } from 'react';
 import styles from './page.module.css'
-import FileButton from '../../components/FileButton';
+import UploadButton from '../../components/UploadButton';
 
 export default function Comprehend() {
-
+  let [fileName, setFileName] = useState('');
   const contentRef = useRef();
+
   return (
     <div className={styles.container}>
       <div className={styles.boxStyle}>
-          <p ref={contentRef}>
-          </p>
+          <p ref={contentRef}/>
       </div>
-      <FileButton name="Upload" cls={styles.uploadButton} content={contentRef}/>
+      <UploadButton setFileName={setFileName} name="Upload" cls={styles.uploadButton} content={contentRef}/>
+      <p className={styles.fileName}>{fileName}</p>
     </div>
     
   )

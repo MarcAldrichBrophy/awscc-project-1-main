@@ -40,6 +40,11 @@
     text-align: center;
   }
   
+  .fileName{
+    top: 75%;
+    margin-top: 20px;
+    position: absolute;
+  }
 /* .main {
     min-height: 100vh;
     background-color: #161B33;

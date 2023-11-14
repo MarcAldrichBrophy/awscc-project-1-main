@@ -1,5 +1,57 @@
-.main {
+/* .main {
     min-height: 100vh;
     background-color: #161B33;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
-  
+
+/* .about{
+    align-items: center;
+} */
+
+.team{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxStyleLeft {
+    padding: 20px;
+    margin-top: 65px;
+    width: 70vw;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+  }
+
+  .boxStyleRight {
+    padding: 20px;
+    margin-top: 65px;
+    width: 70vw;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    margin-left: calc(100vw - 85%);
+  }
+
+  .purpleLeft {
+    border-radius: 60px;
+    background: #A69CAC;
+    min-width: 125px;
+    width: 25%;
+    height: 112px;
+    transform: translate(65%,-50%);
+    z-index: 3;
+  }
+
+  .purpleRight {
+    border-radius: 60px;
+    background: #A69CAC;
+    min-width: 125px;
+    width: 25%;
+    height: 112px;
+    transform: translate(-65%,-50%);
+    z-index: 3;
+  }
