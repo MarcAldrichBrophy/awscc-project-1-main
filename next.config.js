@@ -1,11 +1,10 @@
 // next.config.js
 
 module.exports = {
-    exportTrailingSlash: true,
-    exportPathMap: async function (defaultPathMap) {
+    output: 'standalone',
+    generateStaticParams: async () => {
       return {
-        '/': { page: '/' },
+        '/': { page: '/' }, 
       }
-    },
-    output: 'out'
+    }
   }
