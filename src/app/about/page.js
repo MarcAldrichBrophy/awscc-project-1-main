@@ -1,8 +1,39 @@
-import styles from './about.module.css'
-import Image from 'next/image'
-
+'use client';
+import { useState, useEffect } from 'react' ;
+import styles from './about.module.css';
+import Image from 'next/image';
+import {
+  pic1, pic2, pic3, pic4,
+} from '../images';
 
 export default function About() {
+  let [users, setUsers] = useState([]);
+  useEffect(() => {
+    const abc = [
+      {
+        name: 'user1',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
+        picture: pic1,
+      },
+      {
+        name: 'user2',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
+        picture: pic2,
+      },
+      {
+        name: 'user3',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
+        picture: pic3,
+      },
+      {
+        name: 'user4',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
+        picture: pic4,
+      },
+    ];
+    setUsers(abc);
+  }, []);
+  
   return (
     // <main className={styles.main}>
     //   <div id="mainHeader">
@@ -29,26 +60,38 @@ export default function About() {
               services provided by AWS such as Rekognition, Transcribe, and Comprehend.
             </p>
         </div>
-        <div className = {styles.team}>
+        <div id="about-box" className = {styles.team}>
           <h1>Our Team</h1>
-          
-          <div className={styles.boxStyleLeft} >
-            <p style = {{color:'black'}}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.  </p>
-            <div className = {styles.purple}/>
-          </div>
-
-          <div className={styles.boxStyleRight}>
-            <p style = {{color:'black'}}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.  </p>
-            <div className = {styles.purple}/>
-          </div>
-
+          {
+            users.map((item, index) => index % 2 === 0 ? (
+              <div className={styles.boxStyleLeft} >
+                <p style = {{color:'black'}}> {item.description} </p>
+                <div className={styles.purpleLeft}>
+                  <Image
+                    src={item.picture}
+                    style={{
+                      width: '100%',
+                      height: '100%'
+                    }}
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className={styles.boxStyleRight}>
+                <div className={styles.purpleRight}>
+                  <Image
+                    src={item.picture}
+                    style={{
+                      width: '100%',
+                      height: '100%'
+                    }}
+                  />
+                </div>
+                <p style = {{color:'black'}}> {item.description} </p>
+              </div>
+            ))
+          }
         </div>
       </div>
-      
-      
-      
-
   )
 }

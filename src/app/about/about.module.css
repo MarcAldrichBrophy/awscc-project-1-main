@@ -14,42 +14,44 @@
 
 .team{
     display: flex;
-    height: 50vh;
     flex-direction: column;
 }
 
 .boxStyleLeft {
     padding: 20px;
-    margin-bottom: 65px;
+    margin-top: 65px;
     width: 70vw;
     border-radius: 20px;
     background: white;
     display: flex;
-    left:0;
-    /* margin-right: 30vw; */
-    /* transform: translate(0%,0%);
-    z-index: 2; */
   }
 
   .boxStyleRight {
     padding: 20px;
-    margin-bottom: 65px;
+    margin-top: 65px;
     width: 70vw;
     border-radius: 20px;
     background: white;
     display: flex;
-    /* margin-left: 5vw; */
-    /* transform: translate(0%,0%);
-    z-index: 2; */
+    margin-left: calc(100vw - 85%);
   }
 
-  .purple {
+  .purpleLeft {
     border-radius: 60px;
     background: #A69CAC;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    transform: translate(310%,-50%);
+    min-width: 125px;
+    width: 25%;
+    height: 112px;
+    transform: translate(65%,-50%);
     z-index: 3;
-    position: absolute;
+  }
+
+  .purpleRight {
+    border-radius: 60px;
+    background: #A69CAC;
+    min-width: 125px;
+    width: 25%;
+    height: 112px;
+    transform: translate(-65%,-50%);
+    z-index: 3;
   }
