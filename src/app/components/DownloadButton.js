@@ -12,7 +12,7 @@ const DownloadButton = ({ name , cls, content}) => {
         const url = URL.createObjectURL(blob);
 
         fileInputRef.current.href = URL.createObjectURL(blob);
-        fileInputRef.current.download = 'downloaded_file.txt';
+        fileInputRef.current.download = 'transcript.txt';
         fileInputRef.current.click();
   
         URL.revokeObjectURL(url);
