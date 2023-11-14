@@ -4,7 +4,6 @@ import styles from './page.module.css'
 import FileButton from '../../components/FileButton';
 
 export default function Comprehend() {
-
   const contentRef = useRef();
   return (
     <div className={styles.container}>

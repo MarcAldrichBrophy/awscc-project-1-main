@@ -1,5 +1,55 @@
-.main {
+/* .main {
     min-height: 100vh;
     background-color: #161B33;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
-  
+
+/* .about{
+    align-items: center;
+} */
+
+.team{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+}
+
+.boxStyleLeft {
+    padding: 20px;
+    margin-bottom: 65px;
+    width: 70vw;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    left:0;
+    /* margin-right: 30vw; */
+    /* transform: translate(0%,0%);
+    z-index: 2; */
+  }
+
+  .boxStyleRight {
+    padding: 20px;
+    margin-bottom: 65px;
+    width: 70vw;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    /* margin-left: 5vw; */
+    /* transform: translate(0%,0%);
+    z-index: 2; */
+  }
+
+  .purple {
+    border-radius: 60px;
+    background: #A69CAC;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    transform: translate(310%,-50%);
+    z-index: 3;
+    position: absolute;
+  }
