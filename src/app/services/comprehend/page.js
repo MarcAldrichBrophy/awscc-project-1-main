@@ -34,7 +34,7 @@ export default function Comprehend() {
     <main className={styles.main}>
       <Container className={styles.mainHeader} id="mainHeader">
         <Box className={styles.leftHeader}>
-          <Image src={logo} width={75} height={60}/>
+          <Image src="/logo.png" width={75} height={60}/>
           <Typography>Extracta</Typography>
         </Box>
         <Box className={styles.rightHeader}>

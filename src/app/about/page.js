@@ -1,13 +1,12 @@
 import styles from './about.module.css'
 import Image from 'next/image'
-import logo from '../images/logo.png'
 
 
 export default function HomePage() {
   return (
     <main className={styles.main}>
       <div id="mainHeader">
-        <Image src={logo} width={75} height={60}
+        <Image src="/logo.png" width={75} height={60}
         style={{
           position: 'absolute',
           left: '2vw',
