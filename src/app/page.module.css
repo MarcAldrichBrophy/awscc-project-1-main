@@ -1,6 +1,40 @@
+/*page.module.css*/
+.header {
+  background-color: #161B33; /* match your Figma design */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.navItem {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-weight: bold; /* Add this if your design requires */
+}
+
 .main {
-  min-height: 100vh;
-  background-color: #161B33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center the text */
+  height: 100vh;
+  padding: 0 20px; /* Add padding to prevent content touching the screen edges */
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column; /* This will stack the headline and button vertically */
+  align-items: center; /* This will center the headline and button */
 }
 
 .navbar {
@@ -47,3 +81,77 @@
   }
 }
 
+.headline {
+  position: absolute;
+  top: 40vh;
+  left: 5vw;
+  color: #fff;
+  max-width: 600px; /* Max width for the headline */
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Spacing between the headline and the button */
+}
+
+.tryNowButton {
+  background-color: #F1DAC4;
+  color: #161B33;
+  border: none;
+  padding: 10px 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Add transition for interactive states */
+}
+
+
+.illustration {
+  position: relative;
+  width: 100%; /* Full width */
+  height: 50vh; /* Adjust the height as needed */
+  margin-top: 50px;
+}
+
+/* Add a media query for larger screens */
+@media (min-width: 647px) {
+  .main {
+      flex-direction: row; /* Layout changes to row for larger screens */
+      justify-content: space-around;
+  }
+
+  .headline {
+      font-size: 2.5rem; /* Larger font size for larger screens */
+  }
+
+  .illustration {
+      width: 50%; /* Half of the container size */
+      height: 100%; /* Full height of the container */
+  }
+  .tryNowButton {
+      margin-top: 20px;
+  }
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoTitle {
+  margin-left: 20px; /* Adjust as per your design */
+  color: #fff; /* Text color for the logo title */
+  font-size: 2rem; /* Adjust font size to match your design */
+  font-weight: bold; /* Adjust as per your design */
+}
+
+.navButton {
+  background-color: #F1DAC4; /* Button background color */
+  color: #161B33; /* Button text color, assuming it's the same as the body background */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Adjust as per design */
+  font-size: 1rem;
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block; /* Allows padding and dimensions */
+  margin-left: 10px; /* Spacing from the other nav items */
+  transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
