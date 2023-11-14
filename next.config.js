@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
 
-module.exports = nextConfig
+module.exports = {
+    exportTrailingSlash: true,
+    exportPathMap: async function (defaultPathMap) {
+      return {
+        '/': { page: '/' },
+      }
+    },
+    output: 'out'
+  }
