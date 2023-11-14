@@ -1,4 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
 
-module.exports = nextConfig
+module.exports = {
+    output: 'standalone',
+    generateStaticParams: async () => {
+      return {
+        '/': { page: '/' }, 
+      }
+    }
+  }
