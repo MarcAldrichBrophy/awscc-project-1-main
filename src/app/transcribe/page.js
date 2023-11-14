@@ -1,17 +1,14 @@
 'use client'
 import React, { useRef, useState } from 'react';
 import styles from './transcribe.module.css'
-import Button from '../components/Button'
 import FileButton from '../components/FileButton';
 import DownloadButton from '../components/DownloadButton';
 
 export default function Transcribe() {
 
-  const playButtonClick = () => {
-    console.log('Play clicked!');
-  };
   const contentRef = useRef();
   return (
+    
     <div className={styles.container}>
       <div className={styles.boxStyle}>
           <p ref={contentRef}>
@@ -28,9 +25,8 @@ Ac turpis egestas sed tempus urna et pharetra pharetra. Sagittis vitae et leo du
           </p>
       </div>
       <FileButton name="Upload" cls={styles.uploadButton} content={contentRef}/>
-      <Button name="Play" cls={styles.playButton} onClickHandler={playButtonClick}/>
       <DownloadButton name="Download Transcript" cls={styles.downloadButton} content={contentRef}/>
       
-      </div>
+    </div>
   )
 }
