@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react' ;
 import styles from './about.module.css';
 import Image from 'next/image';
 import {
-  pic1, pic2, pic3, pic4,
+  CalebSwan, SuprajReddy, VaishnaviPunati, pic4,
 } from '../images';
 
 export default function About() {
@@ -11,19 +11,19 @@ export default function About() {
   useEffect(() => {
     const abc = [
       {
-        name: 'user1',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
-        picture: pic1,
+        name: 'CalebSwan',
+        description: "Hi, my name is Caleb, and I am a 1st year at Seattle University studying Computer Science. I’m from the Seattle area and in my free time I enjoy mountain biking, making music, playing tennis, and going out with my friends.",
+        picture: CalebSwan,
       },
       {
-        name: 'user2',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
-        picture: pic2,
+        name: 'SuprajReddy',
+        description: "Preferred Name: Supraj Reddy\nMajor: MS in Computer Science\nGraduation: Spring 2024\n\nHello, I'm Supraj Reddy, a computer science graduate from Hyderabad, India. Beyond the world of coding, I find joy in diverse hobbies. You can often catch me passionately watching soccer matches, immersing myself in the virtual realms of video games, and experimenting with new recipes in the kitchen. I believe in the perfect blend of technology and creativity to make life exciting!",
+        picture: SuprajReddy,
       },
       {
-        name: 'user3',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
-        picture: pic3,
+        name: 'VaishnaviPunati',
+        description: "Preferred name- Vaish\nMajor - MSCS\nGraduation- Winter 2024\n\nHello, my name is Vaishnavi Punati. I have completed my bachelor's in IT and am currently pursuing a master’s in computer science. I was born and brought up in India. My hobbies include watching movies, hiking, and cooking. I am a beach person.\n\nI added a period after \"Vaishnavi Punati\" to separate the sentences, and I adjusted the structure for clarity. Overall, it looks great!",
+        picture: VaishnaviPunati,
       },
       {
         name: 'user4',
@@ -65,13 +65,16 @@ export default function About() {
           {
             users.map((item, index) => index % 2 === 0 ? (
               <div className={styles.boxStyleLeft} >
-                <p style = {{color:'black'}}> {item.description} </p>
+                <p style = {{color:'black', whiteSpace: 'pre-line'}}> {item.description} </p>
                 <div className={styles.purpleLeft}>
                   <Image
                     src={item.picture}
                     style={{
                       width: '100%',
-                      height: '100%'
+                      height: '100%',
+                      borderRadius: '60px',
+                      objectFit: 'cover'
+
                     }}
                   />
                 </div>
@@ -83,11 +86,13 @@ export default function About() {
                     src={item.picture}
                     style={{
                       width: '100%',
-                      height: '100%'
+                      height: '100%',
+                      borderRadius: '60px',
+                      objectFit: 'cover'  
                     }}
                   />
                 </div>
-                <p style = {{color:'black'}}> {item.description} </p>
+                <p style = {{color:'black', whiteSpace: 'pre-line'}}> {item.description} </p>
               </div>
             ))
           }

@@ -1,19 +1,20 @@
 'use client'
 import React, { useRef } from 'react';
 
-const UploadButton = ({ setFileName, name , cls, content}) => {
+const UploadButton = ({ setFileName, name , cls, content, sendTextToAPI}) => {
     const fileInputRef = useRef(null);
 
     const handleFileChange = () => {
       const file = fileInputRef.current.files[0];
+      let fileContent = '';
       if (file) {
         const reader = new FileReader();
         reader.onload = (e) => {
-          const fileContent = e.target.result;
-          content.current.innerText = fileContent;
+          fileContent = e.target.result;
         }
         reader.onloadend = () => {
             setFileName(file.name)
+            sendTextToAPI(fileContent)
         }
         reader.readAsText(file);
 
