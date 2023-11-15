@@ -1,4 +1,4 @@
-export const pic1 = require('./computerDiagram.png');
-export const pic2 = require('./computerDiagram.png');
-export const pic3 = require('./computerDiagram.png');
+export const CalebSwan = require('./CalebSwan.jpg');
+export const SuprajReddy = require('./SuprajReddy.jpg');
+export const VaishnaviPunati = require('./computerDiagram.png');
 export const pic4 = require('./computerDiagram.png');
