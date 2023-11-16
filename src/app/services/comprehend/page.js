@@ -8,16 +8,41 @@ export default function Comprehend() {
   const contentRef = useRef();
 
   //  Function to send text to the specified URL
+  
    const sendTextToAPI = async (text) => {
     try {
-      // const apiUrl = 'https://dog.ceo/api/breeds/image/random';
-      const apiUrl = `https://bi5onbo6tl.execute-api.us-west-2.amazonaws.com/prod/comprehend?Text=${text}`;
-      const response = await fetch(apiUrl);
-
-      // Handle the response as needed
+      const url = 'https://bi5onbo6tl.execute-api.us-west-2.amazonaws.com/prod/comprehend';
+      const body = JSON.stringify({
+        Text: text,
+     
+      });
+      // console.log(typeof text) //string
+      // const body = text;
+  
+      const headers = {
+        "Content-Type":"application/json",
+        
+      };
+   
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: headers,
+        mode:"cors",
+       body: body
+      });
+      console.log(response)
       const responseData = await response.json();
-      console.log(responseData);
-      // contentRef.current.innerText = responseData;
+      console.log(responseData)
+      let message = '';
+      message += "Detected Language: "+ responseData.DetectedLanguage;
+      message += "\n\nSentiment: " + responseData.Sentiment;
+      message += "\n\nSentiment Score: \nPositive: " + responseData.SentimentScore.Positive;
+      message += "\nNegative: " + responseData.SentimentScore.Negative;
+      message += "\n\tNeutral: " + responseData.SentimentScore.Neutral;
+      message += "\n\nKey Phrases: " + responseData.KeyPhrases;
+      message += "\n\nKey Phrase Scores: " + responseData.KeyPhraseScores;
+
+      contentRef.current.innerText = message;
     } catch (error) {
       console.error('Error sending text to API:', error);
     }
