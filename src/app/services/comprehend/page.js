@@ -9,7 +9,7 @@ export default function Comprehend() {
 
   //  Function to send text to the specified URL
   
-   const sendTextToAPI = async (text) => {
+  const sendTextToAPI = async (text) => {
     try {
       const base64 = text.match(/^data:.*;base64,(.*)$/)[1];
       console.log(base64);

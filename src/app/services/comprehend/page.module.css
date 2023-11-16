@@ -18,7 +18,7 @@
     left: 50%; 
     transform: translate(-50%, -50%);
     color: black;
-    overflow: auto;
+    overflow-y: auto;
     text-align: left;
   }
 
@@ -46,52 +46,3 @@
     margin-top: 20px;
     position: absolute;
   }
-/* .main {
-    min-height: 100vh;
-    background-color: #161B33;
-  }
-  
-  .mainHeader {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    top: 10px;
-    position: relative;
-  }
-  
-  .leftHeader {
-    display: flex;
-    align-items: center;
-  }
-  
-  .rightHeader {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .body{
-    display: flex;
-    height: 50vh;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .box {
-    width: 50%;
-    height: 221px;
-    border-radius: 40px;
-    margin: auto;
-    background: #A69CAC;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-  
-  
-  .button{
-    width: 35%;
-    border-radius: 0;
-    background-color: #474973;
-    top: 10px;
-  } */

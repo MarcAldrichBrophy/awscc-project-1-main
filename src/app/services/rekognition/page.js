@@ -69,7 +69,8 @@ export default function RekognitionPage() {
     console.log(response)
     const responseData = await response.json();
     console.log(responseData);
-    setData(()=>{return JSON.stringify(responseData)})
+    const formattedJsonResponse = JSON.stringify(responseData, null, 2).replace(/,(?=(?:[^"]|"[^"]*")*[^"]*$)/g, ",\n");
+    setData(()=>{return formattedJsonResponse})
   };
 
 
