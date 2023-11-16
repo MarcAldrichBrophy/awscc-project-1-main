@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.contentContainer}>
-        <h1 className={styles.headline}>Unlock value from meetings, documents, and visual data.</h1>
+        <h1 className={styles.headline}>Query your data, not your file names. Extracta labels your data for you.</h1>
         <a href="/services" className={styles.tryNowButton}>Try Now</a>
       </div>
       <div className={styles.illustration}>

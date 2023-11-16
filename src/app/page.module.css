@@ -77,12 +77,14 @@
 
 .headline {
   position: absolute;
+  text-align: left;
   top: 40vh;
-  left: 5vw;
+  left: 30vw;
   color: #fff;
   max-width: 600px; /* Max width for the headline */
   font-size: 2rem; /* Adjust font size as needed */
   margin-bottom: 20px; /* Spacing between the headline and the button */
+  transform: translate(-50%, -50%);
 }
 
 .tryNowButton {
@@ -96,9 +98,10 @@
   font-size: 1rem;
   transition: background-color 0.3s ease; /* Add transition for interactive states */
   position: absolute;
-  top: 55vh;
+  top: 65vh;
   left: 30vw;
   text-decoration: none;
+  transform: translate(-50%, -50%);
 }
 
 .illustration {
@@ -106,6 +109,8 @@
   width: 100%; /* Full width */
   height: 50vh; /* Adjust the height as needed */
   margin-top: 50px;
+  left: 25vw;
+  transform: translate(-50%);
 }
 
 /* Add a media query for larger screens */

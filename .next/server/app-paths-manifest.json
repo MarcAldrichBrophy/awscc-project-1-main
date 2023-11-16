@@ -1,10 +1,10 @@
 {
   "/_not-found": "app/_not-found.js",
+  "/about/page": "app/about/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/services/comprehend/page": "app/services/comprehend/page.js",
   "/services/rekognition/page": "app/services/rekognition/page.js",
-  "/about/page": "app/about/page.js",
   "/services/transcribe/page": "app/services/transcribe/page.js",
   "/services/page": "app/services/page.js"
 }
