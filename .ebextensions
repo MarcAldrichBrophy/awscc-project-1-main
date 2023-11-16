@@ -1,16 +1,10 @@
 files:
-  "/etc/nginx/conf.d/proxy.conf":
-    mode: "000644"
+  "/etc/nginx/conf.d/01_custom.conf":
+    mode: "000755"
     owner: root
     group: root
     content: |
-      client_max_body_size 10M;
-
-      location / {
-        proxy_pass http://nodejs;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;      
+      http {
+          types_hash_max_size 2048;
+          types_hash_bucket_size 64;
       }
