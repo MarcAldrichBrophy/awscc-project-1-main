@@ -6,6 +6,7 @@ import {
   CalebSwan, SuprajReddy, VaishnaviPunati, SothaninnSieng, MarcBrophy, Computer
 } from '../images';
 
+
 export default function About() {
   let [users, setUsers] = useState([]);
   useEffect(() => {
@@ -59,22 +60,10 @@ export default function About() {
         picture: Computer,
       },
       {
-        id: 8,
-        name: 'RohitNagotkar',
-        description: "Preferred Name: Rohit Nagotkar\nMajor: MS in Computer Science\nGraduation: 2024\nPosition: Backend - Frontend - Comprehend, API Integration\n\n",
-        picture: Computer,
-      },
-      {
-        id: 9,
-        name: 'EthanSue',
-        description: "Preferred Name: Ethan Sue\nMajor: BS in Computer Science, Entrepreneurship and Innovation Minor\nGraduation: Spring 2024\nPosition: Project Analyst\n\n",
-        picture: Computer,
-      },
-      {
-        id: 10,
-        name: 'NikkiNagata',
-        description: "Preferred Name: Nikki Nagata\nMajor: Bachelor's in Business Management and Analytics, Entrepreneurship and Innovation Minor\nGraduation: Spring 2024\nPosition: Project Analyst\n\n",
-        picture: Computer,
+        id: 4,
+        name: 'user4',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
+        picture: pic4,
       },
     ];
     setUsers(abc);
