@@ -9,12 +9,13 @@ export default function Comprehend() {
 
   //  Function to send text to the specified URL
   
-   const sendTextToAPI = async (text) => {
+  const sendTextToAPI = async (text) => {
     try {
+      const base64 = text.match(/^data:.*;base64,(.*)$/)[1];
+      console.log(base64);
       const url = 'https://bi5onbo6tl.execute-api.us-west-2.amazonaws.com/prod/comprehend';
       const body = JSON.stringify({
-        Text: text,
-     
+        base64File: base64,
       });
       // console.log(typeof text) //string
       // const body = text;
@@ -28,7 +29,7 @@ export default function Comprehend() {
         method: 'POST',
         headers: headers,
         mode:"cors",
-       body: body
+        body: body
       });
       console.log(response)
       const responseData = await response.json();

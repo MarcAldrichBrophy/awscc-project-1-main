@@ -21,17 +21,17 @@ export default function Home() {
       <main className={styles.Container}>
         <div className={styles.Card}>
           <div className={styles.Title}>Rekognition</div>
-          <div className={styles.Text}>Extract items in images to turn visual data into tangible insights</div>
+          <div className={styles.Text}>Extract items in images to turn visual data into tangible insights.</div>
           <Button name={"Use"} cls={styles.Button} onClickHandler={() => click(1)}/>
         </div>
         <div className={styles.Card}>
           <div className={styles.Title}>Transcribe</div>
-          <div className={styles.Text}>Extract text from meetings and redact personal identifiable information</div>
+          <div className={styles.Text}>Extract text from meeting audio files.</div>
           <Button name={"Use"} cls={styles.Button} onClickHandler={() => click(2)}/>
         </div>
         <div className={styles.Card}>
           <div className={styles.Title}>Comprehend</div>
-          <div className={styles.Text}>Extract data, topics, and classifications with confidence scores from your documents</div>
+          <div className={styles.Text}>Extract data, topics, and classifications with confidence scores from your documents.</div>
           <Button name={"Use"} cls={styles.Button} onClickHandler={() => click(3)}/>
         </div>
       </main>
