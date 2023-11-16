@@ -22,7 +22,6 @@ export default function Comprehend() {
   
       const headers = {
         "Content-Type":"application/json",
-        
       };
    
       const response = await fetch(url, {

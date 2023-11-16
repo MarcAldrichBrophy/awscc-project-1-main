@@ -33,6 +33,8 @@ export default function Transcribe() {
       console.log(responseData)
 
       contentRef.current.innerText = responseData;
+
+
     } catch (error) {
       console.error('Error sending text to API:', error);
     }

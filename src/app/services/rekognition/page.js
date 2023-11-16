@@ -73,7 +73,6 @@ export default function RekognitionPage() {
     setData(()=>{return formattedJsonResponse})
   };
 
-
   return (
     <main className={styles.main}>
       <div style={{ textAlign: "center" }}>
