@@ -11,21 +11,25 @@ export default function About() {
   useEffect(() => {
     const abc = [
       {
+        id: 1,
         name: 'CalebSwan',
         description: "Hi, my name is Caleb, and I am a 1st year at Seattle University studying Computer Science. I'm from the Seattle area and in my free time I enjoy mountain biking, making music, playing tennis, and going out with my friends.",
         picture: CalebSwan,
       },
       {
+        id: 2,
         name: 'SuprajReddy',
         description: "Preferred Name: Supraj Reddy\nMajor: MS in Computer Science\nGraduation: Spring 2024\n\nHello, I'm Supraj Reddy, a computer science graduate from Hyderabad, India. Beyond the world of coding, I find joy in diverse hobbies. You can often catch me passionately watching soccer matches, immersing myself in the virtual realms of video games, and experimenting with new recipes in the kitchen. I believe in the perfect blend of technology and creativity to make life exciting!",
         picture: SuprajReddy,
       },
       {
+        id: 3,
         name: 'VaishnaviPunati',
         description: "Preferred name- Vaish\nMajor - MSCS\nGraduation- Winter 2024\n\nHello, my name is Vaishnavi Punati. I have completed my bachelor's in IT and am currently pursuing a master's in computer science. I was born and brought up in India. My hobbies include watching movies, hiking, and cooking. I am a beach person.\n\nI added a period after \"Vaishnavi Punati\" to separate the sentences, and I adjusted the structure for clarity. Overall, it looks great!",
         picture: VaishnaviPunati,
       },
       {
+        id: 4,
         name: 'user4',
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
         picture: pic4,
@@ -64,7 +68,7 @@ export default function About() {
           <h1>Our Team</h1>
           {
             users.map((item, index) => index % 2 === 0 ? (
-              <div className={styles.boxStyleLeft} >
+              <div key={item.id} className={styles.boxStyleLeft} >
                 <p style = {{color:'black', whiteSpace: 'pre-line'}}> {item.description} </p>
                 <div className={styles.purpleLeft}>
                   <Image
@@ -74,13 +78,12 @@ export default function About() {
                       height: '100%',
                       borderRadius: '60px',
                       objectFit: 'cover'
-
                     }}
                   />
                 </div>
               </div>
             ) : (
-              <div className={styles.boxStyleRight}>
+              <div key={item.id} className={styles.boxStyleRight}>
                 <div className={styles.purpleRight}>
                   <Image
                     src={item.picture}
