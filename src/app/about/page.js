@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react' ;
 import styles from './about.module.css';
 import Image from 'next/image';
 import {
-  CalebSwan, SuprajReddy, VaishnaviPunati, pic4,
+  CalebSwan, SuprajReddy, VaishnaviPunati, SothaninnSieng,
 } from '../images';
 
 export default function About() {
@@ -26,9 +26,9 @@ export default function About() {
         picture: VaishnaviPunati,
       },
       {
-        name: 'user4',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Rhoncus mattis rhoncus urna neque viverra justo. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Justo donec enim diam vulputate ut pharetra sit amet.",
-        picture: pic4,
+        name: 'SothaninnSieng',
+        description: "Preferred Name: Ninn\nMajor: MSCS with Specialization in Software Engineering\nGraduation: Spring 2025\n\nHi, my name is Sothaninn Sieng, and I am from Cambodia. In my free time, you'll find me staying up to date with all the food trends and travelling to the most beautiful lakes to go fishing.",
+        picture: SothaninnSieng,
       },
     ];
     setUsers(abc);
