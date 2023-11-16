@@ -9,6 +9,7 @@ const UploadButton = ({ setFileName, name , cls, content, sendTextToAPI}) => {
       let fileContent = '';
       if (file) {
         const reader = new FileReader();
+        reader.readAsDataURL(file);
         reader.onload = (e) => {
           fileContent = e.target.result;
         }
@@ -16,7 +17,7 @@ const UploadButton = ({ setFileName, name , cls, content, sendTextToAPI}) => {
             setFileName(file.name)
             sendTextToAPI(fileContent)
         }
-        reader.readAsText(file);
+        // reader.readAsText(file);
 
         }
     };

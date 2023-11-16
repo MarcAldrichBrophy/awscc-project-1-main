@@ -12,7 +12,7 @@ export default function About() {
     const abc = [
       {
         name: 'CalebSwan',
-        description: "Hi, my name is Caleb, and I am a 1st year at Seattle University studying Computer Science. I’m from the Seattle area and in my free time I enjoy mountain biking, making music, playing tennis, and going out with my friends.",
+        description: "Hi, my name is Caleb, and I am a 1st year at Seattle University studying Computer Science. I'm from the Seattle area and in my free time I enjoy mountain biking, making music, playing tennis, and going out with my friends.",
         picture: CalebSwan,
       },
       {
@@ -22,7 +22,7 @@ export default function About() {
       },
       {
         name: 'VaishnaviPunati',
-        description: "Preferred name- Vaish\nMajor - MSCS\nGraduation- Winter 2024\n\nHello, my name is Vaishnavi Punati. I have completed my bachelor's in IT and am currently pursuing a master’s in computer science. I was born and brought up in India. My hobbies include watching movies, hiking, and cooking. I am a beach person.\n\nI added a period after \"Vaishnavi Punati\" to separate the sentences, and I adjusted the structure for clarity. Overall, it looks great!",
+        description: "Preferred name- Vaish\nMajor - MSCS\nGraduation- Winter 2024\n\nHello, my name is Vaishnavi Punati. I have completed my bachelor's in IT and am currently pursuing a master's in computer science. I was born and brought up in India. My hobbies include watching movies, hiking, and cooking. I am a beach person.\n\nI added a period after \"Vaishnavi Punati\" to separate the sentences, and I adjusted the structure for clarity. Overall, it looks great!",
         picture: VaishnaviPunati,
       },
       {
