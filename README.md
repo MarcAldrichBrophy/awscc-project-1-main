@@ -47,7 +47,8 @@ Comprehend: https://github.com/MarcAldrichBrophy/extracta-lambda-comprehend
 Caleb Swan: https://github.com/calebuki
 Ninn Sieng: https://github.com/Sothaninn
 Rohit Nagotkar: https://github.com/rxhxt
+Carter Martin: https://github.com/Carter-Martin
+Vaishnavi Punati: https://github.com/punativaishnavi
+June Wu: https://github.com/Taslosis
 Supraj Reddy: https://github.com/supraj-reddy
 Gayatri Padma Kunaparaju: https://github.com/gayatri891
-June Wu: https://github.com/Taslosis
-Carter Martin: https://github.com/Carter-Martin
