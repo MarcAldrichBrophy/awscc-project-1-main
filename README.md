@@ -31,7 +31,7 @@ Then run the development server.
 npm run dev 
 ``` 
 
-Open [http://localhost:3000](http://localhost:3000) 
+Open [http://localhost:3000](http://localhost:3000) or run on desired server.
 
 ### Important Notes 
 
