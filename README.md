@@ -35,20 +35,20 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ### Important Notes 
 
-The API endpoints on this project are no longer active, however repositories for all lambda functions are listed here:
+The API endpoints on this project are no longer active, however repositories for all lambda functions are listed here:<br>
 
-S3 Dashboard Integration: https://github.com/MarcAldrichBrophy/extracta-lambda-s3
-Transcribe: https://github.com/MarcAldrichBrophy/extracta-lambda-transcribe
-Rekognition: https://github.com/MarcAldrichBrophy/extracta-lambda-rekognition
+S3 Dashboard Integration: https://github.com/MarcAldrichBrophy/extracta-lambda-s3<br>
+Transcribe: https://github.com/MarcAldrichBrophy/extracta-lambda-transcribe<br>
+Rekognition: https://github.com/MarcAldrichBrophy/extracta-lambda-rekognition<br>
 Comprehend: https://github.com/MarcAldrichBrophy/extracta-lambda-comprehend
 
 # Credits
 
-Caleb Swan: https://github.com/calebuki
-Ninn Sieng: https://github.com/Sothaninn
-Rohit Nagotkar: https://github.com/rxhxt
-Carter Martin: https://github.com/Carter-Martin
-Vaishnavi Punati: https://github.com/punativaishnavi
-June Wu: https://github.com/Taslosis
-Supraj Reddy: https://github.com/supraj-reddy
+Caleb Swan: https://github.com/calebuki<br>
+Ninn Sieng: https://github.com/Sothaninn<br>
+Rohit Nagotkar: https://github.com/rxhxt<br>
+Carter Martin: https://github.com/Carter-Martin<br>
+Vaishnavi Punati: https://github.com/punativaishnavi<br>
+June Wu: https://github.com/Taslosis<br>
+Supraj Reddy: https://github.com/supraj-reddy<br>
 Gayatri Padma Kunaparaju: https://github.com/gayatri891
